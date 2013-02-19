@@ -6,12 +6,13 @@
         http://mina.apache.org/ftpserver/spring/v1
         http://mina.apache.org/ftpserver/ftpserver-1.0.xsd">
 
+
     <bean id="ftpPort" class="java.lang.Integer">
 		<constructor-arg value="8888" />
 	</bean>
 
     <bean class="com.cardrive.ftpserver.FtpServerStarter">
-        <constructor-arg name="ftpServer" ref="ftpServer"/>
+        <constructor-arg index="0" ref="ftpServer"/>
     </bean>
 
 	<ftp:server id="ftpServer" max-logins="1000" anon-enabled="false"
@@ -31,7 +32,7 @@
 	</ftp:server>
 
 	<bean id="carDriveUploadDir" class="java.lang.String">
-		<constructor-arg value="/Users/maulik/ftp-server" />
+		<constructor-arg value="/var/car-drive/upload"/>
 	</bean>
 
 	<bean id="userManager" class="com.cardrive.ftpserver.CarDriveUserManager">

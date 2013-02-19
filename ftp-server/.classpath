@@ -11,7 +11,6 @@
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/jcl-over-slf4j-1.5.2.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/mina-core-2.0.4.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/log4j-1.2.14.jar"/>
-	<classpathentry kind="src" path="Copy of resources"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.context.support-3.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.context-3.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.core-3.0.5.RELEASE.jar"/>
