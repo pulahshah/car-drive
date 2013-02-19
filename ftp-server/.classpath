@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/ftplet-api-1.0.6.jar" sourcepath="/Users/maulik/.m2/repository/org/apache/ftpserver/ftplet-api/1.0.6/ftplet-api-1.0.6-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/ftpserver-core-1.0.6.jar" sourcepath="/Users/maulik/.m2/repository/org/apache/ftpserver/ftpserver-core/1.0.6/ftpserver-core-1.0.6-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/slf4j-api-1.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/slf4j-log4j12-1.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/jcl-over-slf4j-1.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/mina-core-2.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/log4j-1.2.14.jar"/>
+	<classpathentry kind="src" path="Copy of resources"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.context.support-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.context-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.core-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.beans-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.asm-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.expression-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
