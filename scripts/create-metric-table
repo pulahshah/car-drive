@@ -1,0 +1,10 @@
+use car_drive;
+create table if not exists metrics
+(metric_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+metric_name varchar(128),
+metric_value varchar(128) NOT NULL,
+creation_time TIMESTAMP NOT NULL,
+event text NOT NULL,
+object_version TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+Primary Key(metric_id))
+ENGINE=InnoDB DEFAULT CHARSET=utf8;

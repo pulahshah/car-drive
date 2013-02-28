@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cardrive.metrics">
+	<class name="Metric" table="metrics">
+		<id name ="id" type="long" column="metric_id">
+			<generator class="native" />
+		</id>
+		
+		<!-- <property name="metric">
+			<type name="com.cardrive.metrics.GenericEnumUserType">
+				<param name="enumClassName">com.cardrive.metrics.Metric</param>
+			</type>
+		 </property>-->
+		
+		<property name="name" column="metric_name" type="string"/>
+		<property name="value" column="metric_value"/>
+		<property name="event" column="event" type="string"/>
+		<property name="timestamp" column="creation_time" type="timestamp"/>
+	</class>
+</hibernate-mapping>

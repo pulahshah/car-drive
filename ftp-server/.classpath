@@ -17,5 +17,7 @@
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.beans-3.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.asm-3.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/org.springframework.expression-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/commons-lang-2.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
