@@ -145,9 +145,10 @@
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/ftpserver-core-1.0.6.jar" sourcepath="/Users/maulik/.m2/repository/org/apache/ftpserver/ftpserver-core/1.0.6/ftpserver-core-1.0.6-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/mina-core-2.0.4.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/guava-10.0.1.jar"/>
-	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/jackson-core-2.1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/openxc.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/mysql-connector-java-5.1.23-bin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/work/iteration-0036/alexandria/thirdparty/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Downloads/jackson-all-1.8.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -2,34 +2,46 @@ package com.cardrive.metrics;
 
 import java.util.Date;
 
-public class Metric extends BaseObject {
-	
+import com.cardrive.metrics.metricvalue.MetricValueBase;
+
+public class Metric<T> extends BaseObject {
+
 	private Date timeStamp;
-	private String name;
-	private Long value;
+	private MetricEnum name;
+	private MetricValueBase<T> value;
 	private String event;
-	
+	private Class<? extends MetricValueBase<T>> metricValueClass;
+
+	public Class<? extends MetricValueBase<T>> getMetricValueClass() {
+		return metricValueClass;
+	}
+
+	public void setMetricValueClass(
+			Class<? extends MetricValueBase<T>> metricValueClass) {
+		this.metricValueClass = metricValueClass;
+	}
+
 	public Date getTimestamp() {
 		return timeStamp;
 	}
-	
+
 	public void setTimestamp(Date timeStamp) {
 		this.timeStamp = timeStamp;
 	}
-	
-	public Long getValue() {
+
+	public MetricValueBase<T> getValue() {
 		return value;
 	}
-	
-	public void setValue(Long value) {
+
+	public void setValue(MetricValueBase<T> value) {
 		this.value = value;
 	}
 
-	public String getName() {
+	public MetricEnum getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(MetricEnum name) {
 		this.name = name;
 	}
 
@@ -39,5 +51,5 @@ public class Metric extends BaseObject {
 
 	public void setEvent(String event) {
 		this.event = event;
-	}
+	}		
 }

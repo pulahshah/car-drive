@@ -5,19 +5,21 @@
 
 <hibernate-mapping package="com.cardrive.metrics">
 	<class name="Metric" table="metrics">
-		<id name ="id" type="long" column="metric_id">
+		<id name="id" type="long" column="metric_id">
 			<generator class="native" />
 		</id>
-		
-		<!-- <property name="metric">
-			<type name="com.cardrive.metrics.GenericEnumUserType">
-				<param name="enumClassName">com.cardrive.metrics.Metric</param>
+
+		<!-- <property name="metric"> <type name="com.cardrive.metrics.GenericEnumUserType"> 
+			<param name="enumClassName">com.cardrive.metrics.Metric</param> </type> </property> -->
+
+		<property name="name" column="metric_name">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">com.cardrive.metrics.MetricEnum</param>
+				
 			</type>
-		 </property>-->
-		
-		<property name="name" column="metric_name" type="string"/>
-		<property name="value" column="metric_value"/>
-		<property name="event" column="event" type="string"/>
-		<property name="timestamp" column="creation_time" type="timestamp"/>
+		</property>
+		<property name="value" column="metric_value"  type="com.cardrive.dao.MetricValueType"/>
+		<property name="event" column="event" type="string" />
+		<property name="timestamp" column="creation_time" type="timestamp" />
 	</class>
 </hibernate-mapping>

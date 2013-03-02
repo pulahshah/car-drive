@@ -55,6 +55,6 @@ public class CrudDaoImpl<T extends BaseObject> extends HibernateDaoSupport imple
 	}
 
 	private Session getCurrentSession() {
-		return getHibernateTemplate().getSessionFactory().getCurrentSession();
+		return hibernateTemplate.getSessionFactory().getCurrentSession();
 	}
 }
