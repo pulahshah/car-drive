@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.lang.reflect.InvocationTargetException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,7 +11,6 @@ import java.sql.Types;
 
 import org.codehaus.jackson.JsonFactory;
 import org.codehaus.jackson.JsonGenerator;
-import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.JsonParser;
 import org.hibernate.HibernateException;
 import org.hibernate.usertype.EnhancedUserType;
@@ -79,7 +77,6 @@ public class MetricValueType implements EnhancedUserType {
 					metricValueBase = metricValueBase.stringToObject(objectString);
 					return metricValueBase;
 				}
-				
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

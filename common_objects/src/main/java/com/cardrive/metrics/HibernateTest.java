@@ -19,7 +19,6 @@ public class HibernateTest {
 		ICrudDao<Metric> metricDao = ctx.getBean("metricDAO", ICrudDao.class);
 		System.out.println(metricDao);
 		
-		
 		Metric<Long> metric = new Metric<Long>();
 		metric.setEvent("event");
 		metric.setName(MetricEnum.ACCELERATORPEDALPOSITION);
@@ -28,6 +27,6 @@ public class HibernateTest {
 		
 		metricDao.update(metric);
 		metric = metricDao.read(metric.getId());
-		System.out.println(metricDao.read(5L).getValue().getClass());
+		System.out.println(metric.getValue().getClass());
 	}
 }
