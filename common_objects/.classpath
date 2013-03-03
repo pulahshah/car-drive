@@ -4,14 +4,14 @@
 	<classpathentry kind="src" path="src/conf"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/javassist-3.12.0.GA.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/cglib-2.2.jar"/>
-	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar" sourcepath="/Users/maulik/Downloads/hibernate-release-4.1.10.Final/project"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/swarmcache-1.0RC2.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/proxool-0.8.3.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/oscache-2.1.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/jbosscache-core-3.2.1.GA.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/infinispan-core-4.2.1.CR1.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/c3p0-0.9.1.jar"/>
-	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/hibernate3.jar" sourcepath="/Users/maulik/Downloads/hibernate-release-4.1.10.Final/project"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/commons-collections-3.1.jar"/>
 	<classpathentry kind="lib" path="/Users/maulik/Documents/temp/car-drive/jars/dom4j-1.6.1.jar"/>

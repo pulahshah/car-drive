@@ -20,19 +20,19 @@ public abstract class MetricValueBase<T> {
 	}
 	
 	public int getIntegerValue() throws IllegalAccessException {
-		throw new IllegalAccessException("Can't create long value.");
+		throw new IllegalAccessException("Can't create integer value.");
 	}
 	
 	public Double getDoubleValue() throws IllegalAccessException {
-		throw new IllegalAccessException("Can't create long value.");
+		throw new IllegalAccessException("Can't create double value.");
 	}
 	
 	public Boolean getBooleanValue() throws IllegalAccessException {
-		throw new IllegalAccessException("Can't create long value.");
+		throw new IllegalAccessException("Can't create boolean value.");
 	}
 	
 	public Float getFloatValue() throws IllegalAccessException {
-		throw new IllegalAccessException("Can't create long value.");
+		throw new IllegalAccessException("Can't create float value.");
 	}
 	
 	public abstract String objectToString();
