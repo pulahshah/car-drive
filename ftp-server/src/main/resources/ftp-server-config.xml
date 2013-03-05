@@ -6,33 +6,42 @@
         http://mina.apache.org/ftpserver/spring/v1
         http://mina.apache.org/ftpserver/ftpserver-1.0.xsd">
 
+	<import resource="hibernate-config.xml" />
 
-    <bean id="ftpPort" class="java.lang.Integer">
+	<bean id="ftpPort" class="java.lang.Integer">
 		<constructor-arg value="8888" />
 	</bean>
 
-    <bean class="com.cardrive.ftpserver.FtpServerStarter">
-        <constructor-arg index="0" ref="ftpServer"/>
-    </bean>
+	<bean class="com.cardrive.ftpserver.FtpServerStarter">
+		<constructor-arg index="0" ref="ftpServer" />
+	</bean>
 
 	<ftp:server id="ftpServer" max-logins="1000" anon-enabled="false"
 		max-anon-logins="-1">
 		<ftp:listeners>
-			<ftp:nio-listener name="default" port="8888"
+			<ftp:nio-listener name="default" port="10000"
 				implicit-ssl="false">
 				<ftp:data-connection idle-timeout="60">
-					<ftp:active enabled="true" local-port="2220" />
+					<ftp:active enabled="true" local-port="22221" />
 				</ftp:data-connection>
 			</ftp:nio-listener>
 		</ftp:listeners>
-
+		<ftp:ftplets>
+			<ftp:ftplet name="uploadHandler">
+				<ref bean="uploadHandlerFtplet" />
+			</ftp:ftplet>
+		</ftp:ftplets>
 		<ftp:user-manager>
 			<ref bean="userManager" />
 		</ftp:user-manager>
 	</ftp:server>
 
+	<bean id="uploadHandlerFtplet" class="com.cardrive.ftpserver.FileUploadNotifier">
+		<property name="metricDao" ref="metricDAO" />
+	</bean>
+
 	<bean id="carDriveUploadDir" class="java.lang.String">
-		<constructor-arg value="/var/car-drive/upload"/>
+		<constructor-arg value="/var/car-drive/upload" />
 	</bean>
 
 	<bean id="userManager" class="com.cardrive.ftpserver.CarDriveUserManager">

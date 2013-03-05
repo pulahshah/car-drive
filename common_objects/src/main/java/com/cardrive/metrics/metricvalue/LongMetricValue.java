@@ -24,4 +24,9 @@ public class LongMetricValue extends MetricValueBase<Long> {
 		Long value = Long.parseLong(objectString);
 		return new LongMetricValue(value);
 	}
+
+	@Override
+	public void generateValueFromString(String value) {
+		this.value = Long.parseLong(value);
+	}
 }

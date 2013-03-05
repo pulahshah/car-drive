@@ -1,6 +1,8 @@
 package com.cardrive.metrics.metricvalue;
 
-public abstract class MetricValueBase<T> {
+import com.cardrive.exception.ValidationException;
+
+public abstract class MetricValueBase<T extends Object> {
 	protected T value;
 	
 	public MetricValueBase() {
@@ -10,6 +12,7 @@ public abstract class MetricValueBase<T> {
 		this.value = value;
 	}
 
+	public abstract void generateValueFromString(String value) throws ValidationException;
 	
 	public void setValue(T value) {
 		this.value = value;

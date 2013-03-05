@@ -9,16 +9,15 @@ public class Metric<T> extends BaseObject {
 	private Date timeStamp;
 	private MetricEnum name;
 	private MetricValueBase<T> value;
-	private String event;
-	private Class<? extends MetricValueBase<T>> metricValueClass;
 
-	public Class<? extends MetricValueBase<T>> getMetricValueClass() {
-		return metricValueClass;
+	public Metric() {
+		
 	}
-
-	public void setMetricValueClass(
-			Class<? extends MetricValueBase<T>> metricValueClass) {
-		this.metricValueClass = metricValueClass;
+	
+	public Metric(MetricEnum name, MetricValueBase<T> value, Date timeStamp) {
+		this.name = name;
+		this.value = value;
+		this.timeStamp = timeStamp;
 	}
 
 	public Date getTimestamp() {
@@ -44,12 +43,4 @@ public class Metric<T> extends BaseObject {
 	public void setName(MetricEnum name) {
 		this.name = name;
 	}
-
-	public String getEvent() {
-		return event;
-	}
-
-	public void setEvent(String event) {
-		this.event = event;
-	}		
 }

@@ -25,4 +25,9 @@ public class DoubleMetricValue extends MetricValueBase<Double>{
 		Double value = Double.parseDouble(objectString);
 		return new DoubleMetricValue(value);
 	}
+
+	@Override
+	public void generateValueFromString(String value) {
+		this.value = Double.parseDouble(value);		
+	}
 }

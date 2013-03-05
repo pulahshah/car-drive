@@ -7,10 +7,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class FtpServerStarter {
 
 	public FtpServerStarter(FtpServer ftpServer) throws FtpException {
-		ftpServer.start();
+	    ftpServer.start();
 	}
 
 	public static void main(String[] args) {
-		new ClassPathXmlApplicationContext("ftp-server-config.xml");
+	    new ClassPathXmlApplicationContext("ftp-server-config.xml");
 	}
 }

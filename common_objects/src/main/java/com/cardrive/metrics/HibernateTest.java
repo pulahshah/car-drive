@@ -20,7 +20,6 @@ public class HibernateTest {
 		System.out.println(metricDao);
 		
 		Metric<Long> metric = new Metric<Long>();
-		metric.setEvent("event");
 		metric.setName(MetricEnum.ACCELERATORPEDALPOSITION);
 		metric.setTimestamp(new Date(System.currentTimeMillis()));
 		metric.setValue(new LongMetricValue(12L));

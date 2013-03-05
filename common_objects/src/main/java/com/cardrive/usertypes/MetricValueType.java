@@ -149,6 +149,6 @@ public class MetricValueType implements EnhancedUserType {
 	public Object assemble(Serializable arg0, Object arg1)
 			throws HibernateException {
 		// TODO Auto-generated method stub
-		return null;
+		return arg0;
 	}
 }

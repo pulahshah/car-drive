@@ -1,13 +1,13 @@
 package com.cardrive.metrics;	
 
-import com.cardrive.metrics.metricvalue.BooleanMetricValiue;
+import com.cardrive.metrics.metricvalue.BooleanMetricValue;
 import com.cardrive.metrics.metricvalue.DoubleMetricValue;
 import com.cardrive.metrics.metricvalue.LongMetricValue;
 import com.cardrive.metrics.metricvalue.MetricValueBase;
 
 @SuppressWarnings("rawtypes")
 public enum MetricEnum {
-	BRAKEPEDALSTATUS(BooleanMetricValiue.class),
+	BRAKEPEDALSTATUS(BooleanMetricValue.class),
 	FUELLEVEL(LongMetricValue.class),
 	ENGINESPEED(DoubleMetricValue.class),
 	FUELCONSUMED(DoubleMetricValue.class),

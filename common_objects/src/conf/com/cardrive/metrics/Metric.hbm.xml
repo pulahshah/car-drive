@@ -9,9 +9,6 @@
 			<generator class="native" />
 		</id>
 
-		<!-- <property name="metric"> <type name="com.cardrive.metrics.GenericEnumUserType"> 
-			<param name="enumClassName">com.cardrive.metrics.Metric</param> </type> </property> -->
-
 		<property name="name" column="metric_name">
 			<type name="org.hibernate.type.EnumType">
 				<param name="enumClass">com.cardrive.metrics.MetricEnum</param>
@@ -19,9 +16,7 @@
 				<param name="useNamed">true</param>
 			</type>
 		</property>
-		<property name="value" column="metric_value"
-			type="com.cardrive.usertypes.MetricValueType" />
-		<property name="event" column="event" type="string" />
+		<property name="value" column="metric_value" type="com.cardrive.usertypes.MetricValueType" />
 		<property name="timestamp" column="creation_time" type="timestamp" />
 	</class>
 </hibernate-mapping>
